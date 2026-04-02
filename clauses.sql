@@ -1,3 +1,16 @@
+-- clauses :== SQL clauses is actual execution order.
+-- 	1. FROM      :== which table get data
+-- 	2. WHERE     :== data filter by conditions
+-- 	3. GROUP BY  :== grouped same value
+-- 	4. HAVING    :== condition on grouped
+-- 	5. SELECT    :== select the data
+-- 	6. ORDER BY  :== shorting the data (desc/asc)
+-- 	7. LIMIT     :== show row limit
+
+-- create database bank;
+-- use bank;
+
+
 create table employee (
 emp_id serial primary key,
 fname varchar(50) not null,
